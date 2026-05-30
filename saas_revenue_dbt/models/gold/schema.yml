@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: mrr_monthly
+    description: "Monthly Recurring Revenue by customer — core finance KPI table"
+    columns:
+      - name: invoice_month
+        description: "Month in YYYY-MM format"
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: mrr
+        description: "Monthly Recurring Revenue in USD"
+      - name: arr
+        description: "Annual Recurring Revenue (MRR * 12)"
+
+  - name: arr_summary
+    description: "Monthly ARR summary with segment and plan breakdowns"
+    columns:
+      - name: invoice_month
+        description: "Month in YYYY-MM format"
+      - name: total_mrr
+        description: "Total MRR across all customers"
+      - name: total_arr
+        description: "Total ARR across all customers"
+      - name: mrr_growth_pct
+        description: "Month over month MRR growth percentage"
+
+  - name: churn_analysis
+    description: "Customer churn tracking with cohort and category analysis"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: status
+        description: "Active or Churned"
+      - name: churn_category
+        description: "Early, Mid-Term, or Long-Term churn"
+      - name: lost_mrr
+        description: "MRR lost due to churn"
+
+  - name: customer_ltv
+    description: "Customer Lifetime Value with historical and projected LTV"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: historical_ltv
+        description: "Total revenue earned from customer to date"
+      - name: projected_ltv
+        description: "Projected future revenue based on avg monthly spend"
+      - name: customer_value_tier
+        description: "High, Mid, or Low value tier"
+
+  - name: revenue_waterfall
+    description: "MRR movement — New, Expansion, Contraction, Retained"
+    columns:
+      - name: invoice_month
+        description: "Month in YYYY-MM format"
+      - name: mrr_movement_type
+        description: "New, Expansion, Contraction, or Retained"
+      - name: mrr_change
+        description: "Change in MRR for this movement type"
