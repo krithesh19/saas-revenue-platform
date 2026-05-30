@@ -1,0 +1,501 @@
+customer_id,company_name,industry,segment,country,signup_date,acquisition_channel,account_manager
+CUST0001,"Olson, Mcclure and Cummings",FinTech,Mid-Market,USA,2023-07-01,Paid Search,Sean Dorsey
+CUST0002,"David, Dunn and Lewis",EdTech,SMB,Ireland,2024-11-18,Outbound,Tracy Brown
+CUST0003,Hampton and Sons,SaaS,SMB,Ireland,2024-11-28,Organic,Michael Hall
+CUST0004,"Carroll, Brown and Lucas",Logistics,SMB,USA,2024-05-12,Outbound,Brandon Wells
+CUST0005,"Adams, Arnold and Mooney",EdTech,SMB,USA,2023-09-29,Partner,Allison Flynn
+CUST0006,Welch-Warner,Logistics,SMB,UK,2023-08-30,Organic,Ashley Good
+CUST0007,"Sosa, Mitchell and Garcia",HealthTech,Mid-Market,USA,2024-08-11,Referral,Brian Jennings
+CUST0008,"Lewis, Jones and Heath",HealthTech,SMB,France,2024-04-11,Referral,Kelly Khan
+CUST0009,"Garcia, Wagner and Herring",SaaS,SMB,Ireland,2023-04-29,Referral,James Lee
+CUST0010,Walker Group,FinTech,Mid-Market,USA,2024-03-29,Outbound,Nicole Davis
+CUST0011,Wade Group,SaaS,SMB,Ireland,2023-06-17,Referral,Jessica Cardenas
+CUST0012,"Thompson, Smith and Wilson",Logistics,Mid-Market,Germany,2024-08-18,Referral,Michael Kelly
+CUST0013,"Keller, Cobb and Moore",EdTech,Mid-Market,Ireland,2023-08-05,Paid Search,Maria Stephens
+CUST0014,"Myers, Hartman and Smith",FinTech,Mid-Market,Germany,2023-10-17,Organic,Bryan Peterson
+CUST0015,Moon-Walker,SaaS,SMB,USA,2023-04-16,Referral,Cynthia Erickson PhD
+CUST0016,Morris-Gray,E-Commerce,SMB,UK,2023-06-05,Referral,Robert Martinez
+CUST0017,Garcia Inc,EdTech,Mid-Market,USA,2023-07-01,Outbound,Benjamin Shelton
+CUST0018,Erickson Ltd,Logistics,Mid-Market,USA,2023-12-16,Paid Search,Jennifer Cook
+CUST0019,Weaver Inc,E-Commerce,SMB,France,2023-07-26,Outbound,Mr. Charles Mccormick
+CUST0020,Thomas Group,E-Commerce,SMB,Germany,2024-03-29,Organic,Andrew Carpenter
+CUST0021,Carroll Ltd,FinTech,SMB,Germany,2024-09-23,Partner,Paula Huerta
+CUST0022,Davis-Collins,HealthTech,SMB,France,2023-06-07,Outbound,Maria Long
+CUST0023,"Flynn, Lane and Nelson",E-Commerce,Enterprise,UK,2024-05-11,Partner,Karen Moore
+CUST0024,Bishop and Sons,EdTech,SMB,USA,2024-11-17,Referral,Eric Kline
+CUST0025,"Young, Ramirez and Thornton",EdTech,SMB,USA,2024-03-31,Referral,Joy Payne
+CUST0026,Hatfield-Brewer,SaaS,Mid-Market,Germany,2024-09-08,Partner,Daniel Phillips
+CUST0027,Brown and Sons,HealthTech,SMB,USA,2023-08-27,Organic,Joshua Howell
+CUST0028,Adams-Ellis,FinTech,Mid-Market,Ireland,2024-04-10,Paid Search,Terri Leon
+CUST0029,Washington PLC,SaaS,Mid-Market,USA,2024-08-20,Partner,Ryan Crawford
+CUST0030,"Roy, Sawyer and Wilson",SaaS,SMB,USA,2024-07-24,Outbound,Jason Mccullough
+CUST0031,"Norris, Wood and Mullen",FinTech,Enterprise,USA,2023-10-30,Organic,Aaron Fleming
+CUST0032,"Sharp, Morgan and Lucas",Logistics,Mid-Market,Germany,2023-03-30,Referral,William Farmer
+CUST0033,Nguyen LLC,SaaS,SMB,Ireland,2024-08-12,Organic,Austin Adams
+CUST0034,Anderson-Hill,EdTech,Enterprise,UK,2023-10-12,Outbound,Valerie May
+CUST0035,"May, Middleton and Castillo",Logistics,Mid-Market,France,2023-11-16,Referral,Michelle Newman
+CUST0036,Marshall Ltd,Logistics,Mid-Market,USA,2023-08-05,Paid Search,Melissa James
+CUST0037,Bowen LLC,HealthTech,SMB,USA,2023-11-15,Outbound,Kimberly Mullins
+CUST0038,Brown Inc,Logistics,Enterprise,UK,2023-11-19,Organic,Russell Burns
+CUST0039,Diaz-Jackson,E-Commerce,SMB,Germany,2023-11-21,Referral,Karl Morgan
+CUST0040,Edwards-Hayes,HealthTech,SMB,Germany,2024-11-30,Organic,Kimberly Rosales
+CUST0041,Vazquez-Kent,SaaS,SMB,Germany,2024-09-06,Outbound,Monica Reynolds
+CUST0042,Anderson-King,HealthTech,Mid-Market,USA,2023-11-10,Outbound,Megan King
+CUST0043,Miles-Owens,Logistics,SMB,Germany,2024-06-29,Partner,Joanne Adams
+CUST0044,"Santiago, Perez and Proctor",Logistics,Enterprise,Germany,2023-11-02,Paid Search,Andrew Silva
+CUST0045,"Clark, Williams and Hughes",SaaS,Mid-Market,France,2024-11-23,Referral,Matthew Miller
+CUST0046,"Smith, Turner and Carlson",Logistics,SMB,USA,2024-07-02,Paid Search,Mario Howell
+CUST0047,"Peters, Barker and Cross",E-Commerce,SMB,Ireland,2024-07-31,Outbound,Todd Thomas
+CUST0048,Mitchell-Hudson,HealthTech,SMB,Ireland,2024-09-10,Organic,Brian Townsend
+CUST0049,English Group,FinTech,SMB,Germany,2023-09-18,Organic,Lorraine Smith
+CUST0050,Neal-Horton,E-Commerce,Mid-Market,USA,2024-01-13,Paid Search,Matthew Ashley
+CUST0051,Reese Ltd,EdTech,Mid-Market,France,2024-12-16,Outbound,Judy House
+CUST0052,Roberts-Miles,HealthTech,Mid-Market,Germany,2023-07-18,Partner,Christopher Strickland
+CUST0053,"Thomas, Walker and Mcintyre",FinTech,SMB,USA,2024-03-05,Referral,Kathryn Howard
+CUST0054,"Stephens, Thompson and Love",SaaS,SMB,Germany,2023-03-24,Organic,Jessica Robertson
+CUST0055,"Suarez, Smith and Navarro",EdTech,Mid-Market,Ireland,2024-04-18,Partner,Sean Thompson
+CUST0056,"Young, Wells and Wright",FinTech,Mid-Market,UK,2023-04-12,Paid Search,Laura Stevens
+CUST0057,"Wilson, Brown and Gonzalez",HealthTech,Mid-Market,UK,2023-01-17,Referral,Mr. Charles Caldwell
+CUST0058,Rodgers and Sons,FinTech,SMB,UK,2023-09-04,Outbound,Melissa Cruz
+CUST0059,Richardson Inc,EdTech,SMB,France,2023-11-27,Organic,Anthony Buckley
+CUST0060,Mills-Russell,HealthTech,Enterprise,Ireland,2024-07-17,Partner,John Jones
+CUST0061,Chen PLC,SaaS,SMB,France,2024-07-27,Paid Search,Karen Richard
+CUST0062,Gregory Group,SaaS,SMB,UK,2024-01-10,Partner,Elizabeth Velez
+CUST0063,Ryan-Maldonado,EdTech,SMB,France,2024-03-10,Outbound,Zachary Perez
+CUST0064,"Henderson, Rodriguez and Whitney",SaaS,Mid-Market,Ireland,2024-02-11,Referral,Brian Arnold
+CUST0065,Powell Inc,FinTech,SMB,USA,2023-04-09,Outbound,Jessica Molina
+CUST0066,Miller Ltd,E-Commerce,SMB,Ireland,2023-10-10,Outbound,Diamond Robbins
+CUST0067,Byrd-Maxwell,Logistics,SMB,Ireland,2024-12-25,Outbound,Patricia Cruz
+CUST0068,Grant-Smith,HealthTech,SMB,Ireland,2024-09-21,Organic,Kelsey Thompson
+CUST0069,Glass PLC,HealthTech,Mid-Market,UK,2023-10-11,Outbound,Dr. Dana Lee
+CUST0070,"Sims, Kim and Mays",Logistics,SMB,Ireland,2023-05-16,Organic,Brian Morgan DDS
+CUST0071,"Green, Newman and Allen",Logistics,SMB,USA,2024-08-04,Referral,Rebecca Mills
+CUST0072,Leach-Fisher,HealthTech,Enterprise,USA,2023-03-01,Referral,Courtney Gray
+CUST0073,Osborne Ltd,SaaS,SMB,Ireland,2024-11-09,Referral,Tracy Hart
+CUST0074,"Gonzales, Barnes and Jensen",FinTech,SMB,Ireland,2023-02-09,Outbound,Michelle Harris
+CUST0075,"Beck, Nguyen and Tucker",FinTech,Enterprise,Ireland,2023-08-05,Paid Search,Emily Richardson
+CUST0076,Sullivan PLC,HealthTech,Mid-Market,France,2024-09-23,Organic,Susan Ross
+CUST0077,Davis Ltd,E-Commerce,Enterprise,UK,2023-06-20,Partner,Charles Taylor
+CUST0078,Spencer-Lane,EdTech,Mid-Market,UK,2023-01-25,Outbound,Chad Schmidt
+CUST0079,"Tate, Jones and Mcneil",Logistics,SMB,UK,2023-09-15,Organic,Joshua Cross
+CUST0080,"Conner, Nixon and Gonzalez",HealthTech,Enterprise,UK,2023-08-08,Organic,Matthew Duran
+CUST0081,"Butler, Williams and Berg",HealthTech,Mid-Market,UK,2024-08-02,Outbound,Gary Boone
+CUST0082,"Maynard, Terry and Johnson",E-Commerce,SMB,UK,2024-05-04,Referral,Angel Meyer
+CUST0083,"Cannon, Scott and Johnson",E-Commerce,Mid-Market,France,2024-05-09,Organic,Michael Brown
+CUST0084,"Brown, Rubio and Bell",SaaS,SMB,Germany,2023-12-31,Organic,Samuel Reed
+CUST0085,Bradshaw and Sons,HealthTech,SMB,USA,2024-07-23,Referral,Todd Wiggins
+CUST0086,"Boyd, Mills and Gonzales",SaaS,SMB,USA,2024-01-02,Partner,Angela Carter
+CUST0087,"Elliott, Wilson and Mason",FinTech,Mid-Market,Ireland,2023-09-29,Paid Search,Crystal Lewis
+CUST0088,Long-Arroyo,E-Commerce,Mid-Market,USA,2024-09-06,Paid Search,Edward Evans
+CUST0089,Wheeler Inc,FinTech,SMB,UK,2024-07-27,Organic,Ryan Garcia
+CUST0090,Griffin Group,HealthTech,Enterprise,USA,2023-08-27,Organic,Gina Waters
+CUST0091,Gonzalez LLC,Logistics,SMB,Germany,2024-03-08,Partner,Eileen Johnson
+CUST0092,Brown-Phillips,EdTech,Enterprise,Ireland,2023-12-21,Paid Search,Janice Reynolds
+CUST0093,"Drake, Shaw and Miller",HealthTech,Enterprise,Germany,2023-11-11,Organic,Elizabeth Conley
+CUST0094,Harrell PLC,E-Commerce,SMB,Germany,2023-09-19,Partner,Jennifer Knight
+CUST0095,Bell-Jones,EdTech,Mid-Market,Germany,2023-11-06,Referral,Corey Murphy
+CUST0096,"Williams, Christensen and Chung",EdTech,SMB,Ireland,2023-12-02,Organic,Eric Torres
+CUST0097,"Fox, Huerta and Chung",HealthTech,Enterprise,Ireland,2023-03-29,Partner,Kim Oconnor
+CUST0098,"Rosales, Douglas and Tate",HealthTech,SMB,UK,2023-11-11,Paid Search,Candace Pratt
+CUST0099,Long-Tucker,E-Commerce,SMB,Germany,2023-08-28,Referral,Michelle Ritter
+CUST0100,"Ruiz, Barron and Webb",Logistics,SMB,UK,2024-12-01,Outbound,Jill Sanchez
+CUST0101,"Thompson, Schmidt and Patterson",FinTech,SMB,Ireland,2024-07-04,Referral,Carlos Martinez
+CUST0102,"Schwartz, Williams and Harper",E-Commerce,SMB,Ireland,2024-05-14,Outbound,Paula Patterson
+CUST0103,"Green, Jones and Walter",EdTech,SMB,Germany,2023-08-21,Partner,Hannah Padilla
+CUST0104,Smith-Shannon,Logistics,Mid-Market,Ireland,2023-08-19,Outbound,Mallory Lowe
+CUST0105,"Rose, Lane and Johnson",FinTech,SMB,USA,2024-12-15,Organic,Kelly Moon
+CUST0106,Pearson PLC,Logistics,Mid-Market,USA,2024-12-16,Paid Search,Christine Robinson
+CUST0107,Acosta PLC,FinTech,SMB,France,2024-04-26,Referral,Melissa Barnett
+CUST0108,"Smith, Reyes and Diaz",EdTech,Mid-Market,Germany,2024-01-13,Referral,Ryan Rios
+CUST0109,Hoffman PLC,EdTech,Mid-Market,UK,2023-07-03,Partner,Mary Yu DDS
+CUST0110,Thomas PLC,Logistics,Mid-Market,Ireland,2024-04-19,Partner,Richard Young
+CUST0111,Perez-Harper,SaaS,Mid-Market,USA,2024-08-18,Paid Search,Michael Stevenson
+CUST0112,Bailey Inc,E-Commerce,Mid-Market,UK,2023-07-13,Organic,Ashley Carter
+CUST0113,"Ward, Perkins and Jennings",HealthTech,SMB,UK,2023-05-08,Outbound,Sheila Farrell
+CUST0114,"Dougherty, Salazar and Christian",E-Commerce,Mid-Market,USA,2024-08-14,Partner,Jacob Jennings
+CUST0115,Montgomery PLC,Logistics,Mid-Market,USA,2023-03-30,Paid Search,Jordan Ashley
+CUST0116,"Saunders, Carpenter and Zavala",E-Commerce,Mid-Market,USA,2024-07-05,Outbound,Crystal Romero
+CUST0117,Miller Group,HealthTech,SMB,USA,2023-01-25,Paid Search,Christine Stevenson
+CUST0118,"Black, Collins and Ramos",HealthTech,Mid-Market,Ireland,2024-01-16,Paid Search,Alisha Baker
+CUST0119,"Green, Hudson and Higgins",Logistics,Enterprise,Germany,2024-04-01,Organic,Kayla Lewis
+CUST0120,"Harrison, Boyle and Martin",EdTech,SMB,USA,2024-06-05,Partner,Donna Holmes MD
+CUST0121,Moore Group,HealthTech,SMB,Ireland,2023-01-11,Organic,Stephanie Cain
+CUST0122,"Schneider, Spencer and Bruce",FinTech,Enterprise,Germany,2023-06-16,Paid Search,Lisa Mayer
+CUST0123,Morris Inc,EdTech,SMB,USA,2024-02-27,Organic,Amanda Stevens
+CUST0124,"Fisher, Smith and Robles",FinTech,Mid-Market,USA,2023-08-14,Partner,Michael Fitzgerald
+CUST0125,Parker-Gaines,Logistics,Mid-Market,USA,2024-06-17,Partner,Taylor Johnson
+CUST0126,"Myers, Roman and King",EdTech,Mid-Market,Germany,2024-06-05,Partner,Dr. Jacqueline Berry
+CUST0127,"Harris, Nguyen and Wagner",Logistics,Mid-Market,UK,2024-11-12,Paid Search,Joan Rodriguez
+CUST0128,Arnold-Porter,SaaS,Mid-Market,USA,2024-08-06,Paid Search,Marcus Ray
+CUST0129,Dorsey-Weiss,E-Commerce,Mid-Market,Germany,2024-06-02,Outbound,Christine Taylor
+CUST0130,Wilkerson-Rasmussen,HealthTech,SMB,UK,2024-02-23,Organic,Traci Ramsey
+CUST0131,Cantrell LLC,HealthTech,Mid-Market,UK,2023-09-24,Referral,Rachael Barton
+CUST0132,Brown-Morales,FinTech,Enterprise,Ireland,2023-11-25,Paid Search,Jamie Mitchell
+CUST0133,"Lewis, Miller and Davis",HealthTech,SMB,USA,2023-07-18,Organic,Jose Saunders
+CUST0134,"Franklin, Cook and Miller",E-Commerce,SMB,USA,2023-01-15,Partner,Rebecca Bean
+CUST0135,Hicks-Russell,SaaS,SMB,UK,2024-05-11,Outbound,Tanner Howell
+CUST0136,Torres Ltd,FinTech,Enterprise,Germany,2024-10-04,Outbound,Mary Reese
+CUST0137,Quinn LLC,FinTech,SMB,France,2024-03-09,Referral,Laura Sanders
+CUST0138,Joseph Inc,SaaS,Mid-Market,USA,2024-12-24,Outbound,Molly Cervantes
+CUST0139,"Brown, Diaz and Miller",HealthTech,Mid-Market,USA,2024-03-01,Referral,Monica Castro
+CUST0140,"Franco, Carter and Carpenter",FinTech,SMB,UK,2023-12-05,Partner,Eric Boyd
+CUST0141,Castillo-Martinez,SaaS,Mid-Market,France,2023-02-17,Outbound,Jessica Beard
+CUST0142,Williams-Bishop,SaaS,Mid-Market,USA,2023-08-22,Organic,Karina Lynch
+CUST0143,Porter-Scott,SaaS,SMB,Ireland,2023-01-18,Partner,Susan Cantrell
+CUST0144,Anderson LLC,E-Commerce,SMB,UK,2023-06-04,Paid Search,Paul Anderson DVM
+CUST0145,Cook-Henry,E-Commerce,SMB,Germany,2023-01-17,Partner,April Rose
+CUST0146,Ramirez Group,SaaS,SMB,UK,2023-11-01,Organic,Jessica Krueger
+CUST0147,"Friedman, Yates and Holloway",EdTech,SMB,USA,2023-04-18,Referral,Teresa Khan
+CUST0148,"Warren, Atkinson and Holloway",FinTech,SMB,Germany,2024-12-17,Organic,David Munoz
+CUST0149,"Shepherd, Swanson and Schmidt",HealthTech,Mid-Market,Ireland,2024-05-28,Organic,Sonia Hernandez
+CUST0150,Taylor-Flowers,HealthTech,Mid-Market,Ireland,2023-02-12,Organic,Gina Davis
+CUST0151,"Cortez, Boyer and Powell",HealthTech,Mid-Market,USA,2024-08-15,Referral,Jennifer Patel
+CUST0152,Wallace Inc,HealthTech,Mid-Market,USA,2023-01-12,Organic,Karen Price
+CUST0153,"Acosta, Trujillo and Carter",HealthTech,Mid-Market,France,2024-10-18,Organic,Jesse Briggs
+CUST0154,"Keller, Smith and Obrien",E-Commerce,Mid-Market,USA,2024-12-28,Partner,Penny Jacobs
+CUST0155,Wall LLC,EdTech,SMB,Ireland,2024-03-30,Outbound,Emily Maddox
+CUST0156,Ortiz Group,EdTech,Mid-Market,UK,2023-08-01,Referral,James Scott
+CUST0157,"Smith, Park and Anderson",Logistics,Enterprise,Germany,2023-03-18,Outbound,Elizabeth Jones
+CUST0158,Ayala Group,E-Commerce,Mid-Market,USA,2023-05-12,Referral,Pamela Young
+CUST0159,Reyes-Martin,EdTech,SMB,UK,2023-01-31,Partner,Christopher Huber
+CUST0160,"Rhodes, Matthews and Fleming",FinTech,Mid-Market,UK,2024-11-21,Referral,Patrick Cruz
+CUST0161,"Holt, Adams and Moss",SaaS,Mid-Market,USA,2023-10-26,Partner,William Owen
+CUST0162,Brock LLC,Logistics,SMB,France,2024-12-14,Referral,Joshua Gamble
+CUST0163,"Williams, Moran and Leach",Logistics,Mid-Market,Germany,2024-01-19,Partner,Sarah Jones
+CUST0164,Smith-Meadows,EdTech,SMB,USA,2024-01-10,Referral,Tracy Mccarthy
+CUST0165,Velazquez and Sons,FinTech,Enterprise,UK,2023-05-27,Partner,Christopher Brown
+CUST0166,Jordan-Price,SaaS,SMB,USA,2023-11-06,Partner,Nicole Santiago
+CUST0167,Webb Group,SaaS,SMB,Germany,2024-02-19,Paid Search,Ryan Hatfield
+CUST0168,Carpenter Ltd,E-Commerce,SMB,Germany,2023-12-08,Referral,Charles Blankenship
+CUST0169,White-Anderson,Logistics,SMB,USA,2024-02-07,Referral,Susan Lee
+CUST0170,Tate-Davis,Logistics,Mid-Market,France,2023-11-13,Organic,Joan Smith
+CUST0171,Johnson-Ashley,SaaS,SMB,USA,2024-12-28,Paid Search,Deanna Wallace
+CUST0172,Shaw PLC,EdTech,Mid-Market,USA,2024-03-24,Partner,Kimberly Preston
+CUST0173,Collins LLC,FinTech,Mid-Market,UK,2023-03-09,Partner,Alexandra Gibbs
+CUST0174,Gillespie-Mendez,E-Commerce,Mid-Market,USA,2024-07-07,Referral,Ronald Douglas
+CUST0175,Burns-Bradley,Logistics,SMB,UK,2024-08-27,Outbound,Diamond Becker
+CUST0176,"Daniels, Riley and Simpson",EdTech,SMB,USA,2024-09-12,Referral,Anthony Martin
+CUST0177,Watkins-Collins,FinTech,SMB,USA,2024-05-24,Referral,Amy Burnett
+CUST0178,Kelly-Lopez,Logistics,SMB,France,2023-05-10,Paid Search,Courtney Martinez
+CUST0179,"Martinez, Wiley and Munoz",EdTech,SMB,USA,2024-02-19,Outbound,Michelle Williams
+CUST0180,Robertson-Jackson,Logistics,Enterprise,USA,2024-04-26,Organic,Virginia Miller
+CUST0181,Wiley-Dickerson,E-Commerce,Mid-Market,UK,2023-02-25,Paid Search,Jennifer Jones
+CUST0182,"Chambers, Nixon and Miles",EdTech,SMB,USA,2024-09-14,Referral,Roberta Becker
+CUST0183,Shannon Group,FinTech,SMB,USA,2024-08-13,Paid Search,Debra Wang
+CUST0184,"Duke, Curtis and Pennington",SaaS,Mid-Market,Ireland,2023-03-05,Organic,Russell Jordan
+CUST0185,Robinson Inc,SaaS,Mid-Market,USA,2023-02-28,Referral,Sandra Wells
+CUST0186,"Lam, Ramsey and Morgan",FinTech,SMB,UK,2023-04-20,Partner,Peggy Perry
+CUST0187,"Carpenter, Arroyo and Johnson",FinTech,SMB,UK,2023-11-15,Organic,John Sanchez
+CUST0188,Thompson-Davis,EdTech,Mid-Market,Ireland,2024-07-09,Paid Search,Brandon Bowen
+CUST0189,Garcia LLC,E-Commerce,Mid-Market,Ireland,2024-07-15,Paid Search,Erika Zimmerman
+CUST0190,"Munoz, Flores and Wade",SaaS,SMB,USA,2024-11-30,Outbound,Mary Kelly
+CUST0191,"Maldonado, Thompson and Smith",Logistics,SMB,UK,2023-10-17,Partner,Frederick Potter PhD
+CUST0192,Simmons Group,Logistics,SMB,France,2024-09-10,Referral,Andrew Campbell
+CUST0193,Carroll-Shepard,FinTech,Mid-Market,USA,2023-09-27,Organic,Edward Phelps
+CUST0194,"Rowland, Butler and Mora",HealthTech,Enterprise,USA,2023-04-03,Referral,Kimberly Miller
+CUST0195,Nichols-Kim,HealthTech,Mid-Market,UK,2024-01-16,Outbound,Stephen Sandoval
+CUST0196,Green Inc,FinTech,SMB,UK,2024-08-05,Outbound,Ian Smith
+CUST0197,Wallace and Sons,FinTech,SMB,UK,2024-01-31,Referral,Timothy Gallagher
+CUST0198,Ford-Villanueva,SaaS,Mid-Market,Ireland,2023-07-19,Paid Search,Mrs. Heather Pollard
+CUST0199,Moore-Price,EdTech,Enterprise,USA,2023-12-28,Paid Search,Randall Becker
+CUST0200,"Fisher, Heath and Miller",Logistics,SMB,UK,2024-06-13,Paid Search,David Kerr
+CUST0201,Martinez-James,HealthTech,Enterprise,Ireland,2023-08-03,Paid Search,James Johnson
+CUST0202,Herrera-Day,Logistics,Mid-Market,USA,2023-11-03,Outbound,Ashley Mendez
+CUST0203,Smith-Fletcher,SaaS,Enterprise,Ireland,2023-12-14,Referral,Andrew Daniels
+CUST0204,"Hanson, Cox and Thomas",E-Commerce,Mid-Market,USA,2023-07-03,Partner,Arthur Reed
+CUST0205,Miranda-Rodriguez,Logistics,SMB,Ireland,2024-02-11,Partner,Audrey Kelley
+CUST0206,"Mccoy, Webb and Sanders",Logistics,Mid-Market,UK,2024-12-21,Organic,Kimberly Finley
+CUST0207,Ortega Ltd,EdTech,SMB,Germany,2023-03-16,Outbound,Kristin Pacheco
+CUST0208,Jones-Torres,FinTech,Mid-Market,France,2023-11-12,Referral,Anna Johnson
+CUST0209,"Davis, Nixon and Wilson",HealthTech,Mid-Market,USA,2024-06-13,Partner,Jodi Goodman
+CUST0210,Norton LLC,HealthTech,Enterprise,France,2023-07-05,Partner,Bryan Beasley
+CUST0211,Gardner LLC,SaaS,Mid-Market,France,2024-10-02,Partner,Joseph Meza
+CUST0212,"Stevens, Jackson and Byrd",E-Commerce,SMB,UK,2023-12-20,Organic,Katie Torres
+CUST0213,"Mathews, Green and Ford",E-Commerce,Enterprise,UK,2023-08-25,Partner,Nathaniel Cooley
+CUST0214,Dougherty-Diaz,SaaS,SMB,Germany,2023-04-03,Outbound,Angela Carroll
+CUST0215,"Mason, Taylor and Peterson",FinTech,SMB,UK,2023-09-02,Referral,Caleb Sanford
+CUST0216,Mathis-Walker,SaaS,SMB,Germany,2024-12-17,Organic,Adam Hall
+CUST0217,Howell-Adams,Logistics,Mid-Market,USA,2023-05-27,Organic,Alexandria Ramirez
+CUST0218,Kidd-Pittman,E-Commerce,SMB,USA,2024-05-28,Partner,Rita Estrada
+CUST0219,James-Smith,FinTech,Mid-Market,UK,2024-11-27,Outbound,William Butler
+CUST0220,"Paul, Robinson and Contreras",E-Commerce,SMB,UK,2023-11-15,Partner,Janet Johnson
+CUST0221,Boyle PLC,EdTech,SMB,USA,2023-08-14,Paid Search,Aimee Mills
+CUST0222,Dunn-Young,E-Commerce,Mid-Market,USA,2023-02-10,Outbound,Brianna Newton
+CUST0223,"Strickland, Little and Donovan",HealthTech,SMB,France,2024-12-07,Organic,Steven Castillo
+CUST0224,Hall PLC,FinTech,SMB,USA,2024-03-19,Paid Search,Richard Fisher
+CUST0225,"Figueroa, Sheppard and Jensen",EdTech,SMB,UK,2024-11-19,Referral,Antonio Newman
+CUST0226,Sanders-Rice,SaaS,SMB,France,2024-03-04,Paid Search,John Barrett
+CUST0227,"Cruz, Bates and Chan",HealthTech,SMB,UK,2024-06-02,Outbound,Wendy Jones
+CUST0228,"Zamora, Cunningham and Thompson",HealthTech,Mid-Market,Germany,2023-04-21,Referral,Lacey Schultz
+CUST0229,Moore Inc,SaaS,Mid-Market,UK,2023-11-13,Outbound,Rachael Cook
+CUST0230,Melton Inc,FinTech,SMB,UK,2023-03-12,Referral,Brian Smith
+CUST0231,Peters and Sons,Logistics,Mid-Market,France,2023-12-05,Partner,Laura Wood
+CUST0232,"Wallace, Davis and Cunningham",SaaS,Enterprise,USA,2024-07-26,Referral,Maurice Neal
+CUST0233,Rangel-Davis,Logistics,SMB,UK,2023-02-01,Referral,Raymond Williams
+CUST0234,"Martinez, Richards and Bush",EdTech,Enterprise,UK,2024-01-29,Partner,Benjamin Sutton
+CUST0235,Vaughn-Russell,SaaS,SMB,Ireland,2023-08-01,Partner,Joshua Bowman DDS
+CUST0236,"Hicks, Moran and Jones",SaaS,Mid-Market,UK,2024-11-02,Paid Search,Michelle Mack
+CUST0237,Christensen LLC,FinTech,SMB,Ireland,2023-07-09,Outbound,William Reyes
+CUST0238,"Johnson, Young and Shelton",FinTech,SMB,Germany,2024-10-29,Partner,Lisa Navarro
+CUST0239,"Thornton, Lang and Conley",SaaS,SMB,Ireland,2023-08-31,Paid Search,Molly Johnson
+CUST0240,"Landry, Anderson and Graham",EdTech,SMB,France,2023-07-22,Organic,Alicia Brown
+CUST0241,"Downs, Gomez and Wiggins",E-Commerce,SMB,UK,2023-07-26,Partner,Victor Nunez
+CUST0242,Carter-Turner,E-Commerce,Mid-Market,Germany,2024-02-12,Outbound,Matthew Lucero
+CUST0243,"Cunningham, Garcia and Evans",E-Commerce,SMB,USA,2024-12-26,Partner,Charles Jones
+CUST0244,"Thomas, Mills and Guerra",FinTech,Enterprise,USA,2023-07-20,Paid Search,Barbara Lynn
+CUST0245,Clark Group,E-Commerce,Mid-Market,France,2023-10-02,Organic,Hannah Kerr
+CUST0246,Gamble Inc,FinTech,SMB,Germany,2023-06-18,Organic,Kimberly Smith
+CUST0247,Jimenez-Oliver,EdTech,SMB,UK,2023-09-08,Organic,Dr. Jackie Ferrell
+CUST0248,Nielsen Ltd,FinTech,SMB,UK,2023-10-21,Referral,Calvin Walters
+CUST0249,Romero and Sons,HealthTech,SMB,USA,2024-06-29,Outbound,Anna Suarez
+CUST0250,Watkins and Sons,HealthTech,Mid-Market,Ireland,2023-10-27,Organic,Belinda Hahn
+CUST0251,Jones Group,SaaS,Mid-Market,USA,2023-07-03,Paid Search,Christine White
+CUST0252,David PLC,Logistics,SMB,Ireland,2023-07-25,Partner,Tiffany Singh
+CUST0253,"Cunningham, Gibson and Deleon",SaaS,Mid-Market,UK,2023-12-13,Organic,Tracy Allen
+CUST0254,Miller-Black,SaaS,Enterprise,France,2024-06-27,Outbound,Gary Rodriguez
+CUST0255,Santos and Sons,SaaS,SMB,France,2023-11-11,Outbound,Gary Jones
+CUST0256,Serrano PLC,SaaS,SMB,USA,2023-04-25,Partner,Amy Mcconnell
+CUST0257,"Wright, Miles and Sanchez",HealthTech,Mid-Market,France,2024-04-26,Partner,Richard Johnson
+CUST0258,"Gates, Holmes and Guerra",SaaS,SMB,USA,2023-11-02,Outbound,Cathy Herman
+CUST0259,"Nguyen, Ryan and Avila",EdTech,SMB,UK,2023-02-24,Partner,Anthony Baxter
+CUST0260,Hebert-Washington,Logistics,SMB,Germany,2023-02-09,Organic,John Ramos
+CUST0261,"Meyers, Nguyen and Morris",EdTech,Enterprise,USA,2024-02-25,Referral,Brenda David
+CUST0262,Gonzalez Inc,HealthTech,Mid-Market,USA,2024-05-27,Referral,Michelle Kelley
+CUST0263,Holland Ltd,HealthTech,SMB,USA,2024-02-08,Paid Search,Laura Morris
+CUST0264,"Carlson, Higgins and Mcdonald",EdTech,Mid-Market,USA,2023-02-07,Referral,Annette Stone
+CUST0265,Ellis LLC,FinTech,Mid-Market,USA,2023-04-09,Paid Search,David Hart
+CUST0266,"Huffman, Lewis and Williams",E-Commerce,SMB,UK,2023-07-01,Partner,Heather Diaz
+CUST0267,Rivera Inc,HealthTech,SMB,Germany,2024-03-23,Referral,Stephanie Richards
+CUST0268,King-Young,E-Commerce,Mid-Market,Germany,2024-07-10,Referral,Stanley Miller
+CUST0269,Ramirez-Cohen,SaaS,Enterprise,France,2024-05-23,Referral,David Mcconnell
+CUST0270,Stein Ltd,E-Commerce,Mid-Market,Germany,2024-11-19,Partner,Kurt Herrera
+CUST0271,Smith-Stokes,HealthTech,Enterprise,Germany,2023-10-11,Paid Search,Matthew Hobbs
+CUST0272,Obrien-Brennan,EdTech,Enterprise,USA,2024-01-04,Partner,Marc Bell
+CUST0273,"Jones, Lowe and Proctor",Logistics,Enterprise,UK,2024-04-11,Partner,Ashley Berger
+CUST0274,Duncan Group,Logistics,SMB,Ireland,2023-02-26,Referral,Timothy Robinson
+CUST0275,"Wyatt, Torres and Kim",EdTech,Mid-Market,UK,2023-07-28,Partner,Samantha Bennett
+CUST0276,Grant PLC,E-Commerce,Mid-Market,Ireland,2024-01-30,Paid Search,Zachary Mullins
+CUST0277,Mendez-Madden,Logistics,SMB,Germany,2023-09-18,Outbound,Kathryn Edwards
+CUST0278,Casey LLC,Logistics,SMB,UK,2023-03-11,Organic,Kevin Williamson
+CUST0279,Thomas Inc,SaaS,Mid-Market,France,2024-02-27,Referral,Michelle Wilson
+CUST0280,Humphrey Ltd,FinTech,Mid-Market,Ireland,2024-07-07,Organic,Lindsey Foley
+CUST0281,Stevenson-Mcgee,SaaS,SMB,Ireland,2024-08-01,Paid Search,Rebecca Lane
+CUST0282,"Holland, Martinez and Brown",HealthTech,Enterprise,UK,2023-09-25,Referral,Jeffery Campbell DVM
+CUST0283,Perez Ltd,EdTech,Mid-Market,USA,2024-06-01,Outbound,Amanda Duncan
+CUST0284,Rice-Hall,EdTech,SMB,USA,2023-07-11,Partner,Sara Walsh
+CUST0285,Guzman LLC,SaaS,Mid-Market,USA,2023-03-14,Referral,Kyle Frank
+CUST0286,Jennings LLC,E-Commerce,SMB,UK,2024-12-09,Partner,Kyle Cruz
+CUST0287,Alvarado-Bell,E-Commerce,Enterprise,Ireland,2024-02-10,Referral,Theresa Moore
+CUST0288,Skinner-Hoffman,EdTech,Mid-Market,UK,2023-03-06,Partner,Bradley Fuentes
+CUST0289,Kennedy-Burnett,FinTech,SMB,France,2024-06-29,Partner,Jennifer Payne
+CUST0290,"Johnston, Stone and Morgan",HealthTech,SMB,USA,2023-09-05,Outbound,Scott Price
+CUST0291,Payne-Browning,FinTech,Enterprise,Germany,2024-12-15,Paid Search,Sandra Hernandez
+CUST0292,"Sanchez, Martin and Burton",Logistics,Enterprise,UK,2024-01-23,Outbound,Crystal Brown
+CUST0293,Martinez Ltd,HealthTech,SMB,Germany,2023-09-27,Paid Search,Amy Wilkins
+CUST0294,"Rice, Lewis and Galloway",HealthTech,SMB,Germany,2024-07-31,Outbound,Mikayla Hernandez
+CUST0295,Freeman-Krueger,HealthTech,SMB,France,2023-07-23,Outbound,Micheal Garrett
+CUST0296,Reynolds Inc,HealthTech,SMB,Ireland,2024-04-18,Organic,Heather Baker
+CUST0297,Wong-Kelly,E-Commerce,SMB,Germany,2023-11-04,Paid Search,Kristen Wells
+CUST0298,"Keller, Gilbert and Parsons",FinTech,Mid-Market,Ireland,2024-08-24,Organic,Calvin Sims
+CUST0299,Andrews-Anderson,SaaS,SMB,USA,2023-11-23,Organic,Aaron Jones
+CUST0300,"Graves, Alvarez and Rodriguez",E-Commerce,SMB,USA,2023-02-19,Organic,Alec Watson DVM
+CUST0301,"Rivera, Jones and Stein",HealthTech,SMB,France,2023-01-07,Organic,Rebecca Jones
+CUST0302,Martin Ltd,EdTech,Mid-Market,USA,2023-06-30,Partner,Tonya Jones
+CUST0303,Pacheco PLC,FinTech,Mid-Market,Ireland,2023-01-16,Partner,Martha Foley
+CUST0304,Oliver PLC,SaaS,Mid-Market,USA,2023-02-07,Partner,Morgan Dean
+CUST0305,Armstrong Inc,SaaS,Mid-Market,Ireland,2023-04-10,Organic,Crystal Woods
+CUST0306,Everett Ltd,HealthTech,SMB,Ireland,2024-04-27,Referral,Sarah Hogan
+CUST0307,Hernandez Group,Logistics,Mid-Market,USA,2024-03-31,Referral,Shelby James
+CUST0308,Avery PLC,Logistics,SMB,USA,2023-07-07,Partner,Kelsey Underwood
+CUST0309,Bell PLC,SaaS,Mid-Market,Ireland,2023-03-14,Organic,Bradley Young
+CUST0310,"Spears, Russell and Santos",EdTech,Enterprise,Germany,2024-06-16,Outbound,Kristy Cunningham
+CUST0311,"Parrish, Moran and Johnson",HealthTech,Mid-Market,UK,2024-08-14,Paid Search,Kerry Wilson
+CUST0312,"Bailey, Hatfield and Lee",SaaS,SMB,UK,2023-11-02,Organic,Stephanie Moyer
+CUST0313,Young-Sanders,E-Commerce,SMB,USA,2024-06-25,Referral,Michael Smith
+CUST0314,"Allen, Barnes and Lucero",EdTech,Enterprise,France,2023-07-18,Organic,Christopher Davis
+CUST0315,Jones Ltd,FinTech,SMB,Ireland,2024-02-24,Organic,Timothy Clark
+CUST0316,"Martinez, Gibson and Davies",E-Commerce,Mid-Market,Germany,2024-04-07,Outbound,Tara Buchanan
+CUST0317,"Gonzales, Bennett and Strickland",Logistics,SMB,USA,2024-11-29,Organic,Kathy Carrillo
+CUST0318,Snyder LLC,EdTech,SMB,France,2023-07-07,Partner,Scott Young
+CUST0319,Wilson and Sons,EdTech,Enterprise,Ireland,2024-11-09,Referral,Travis Bauer
+CUST0320,Elliott-Gonzales,E-Commerce,Mid-Market,Ireland,2024-04-17,Outbound,Melissa Roberts
+CUST0321,"Jones, Hayes and Moreno",EdTech,SMB,USA,2024-05-04,Organic,Veronica Whitaker
+CUST0322,Khan PLC,Logistics,SMB,UK,2024-03-24,Referral,Kimberly Lopez
+CUST0323,"Wilcox, Davis and Duncan",SaaS,Mid-Market,Germany,2024-02-07,Outbound,David Johns
+CUST0324,Hughes-Heath,EdTech,Mid-Market,USA,2024-06-14,Outbound,Jesse Wallace
+CUST0325,Brooks PLC,EdTech,Enterprise,UK,2024-09-01,Paid Search,Willie Burton
+CUST0326,"Williams, Vasquez and Williams",E-Commerce,SMB,France,2024-11-04,Referral,Elizabeth Pugh
+CUST0327,Lewis-Scott,HealthTech,SMB,USA,2024-07-17,Partner,Taylor Rodriguez
+CUST0328,"Rios, Humphrey and Duncan",EdTech,SMB,USA,2023-12-25,Organic,James Richards
+CUST0329,"Grimes, Wilson and Welch",Logistics,SMB,UK,2023-02-24,Partner,Yolanda Rodriguez
+CUST0330,Adams Inc,HealthTech,SMB,UK,2023-10-14,Referral,David Mack
+CUST0331,Crawford-Taylor,Logistics,Mid-Market,USA,2024-11-03,Organic,Jamie Chandler
+CUST0332,"Edwards, Salazar and Blackwell",Logistics,SMB,Ireland,2024-08-25,Organic,Douglas Lopez
+CUST0333,"Hardy, Randall and Moore",EdTech,SMB,UK,2024-08-01,Outbound,Eric Wolfe
+CUST0334,Rodriguez-Rios,E-Commerce,SMB,UK,2023-05-13,Outbound,Michelle Bowman
+CUST0335,Garcia-Woods,SaaS,SMB,Ireland,2023-03-24,Outbound,Chelsey Santiago
+CUST0336,White-Abbott,EdTech,SMB,UK,2023-10-22,Paid Search,Jonathan Turner
+CUST0337,"Bauer, Rodriguez and Mendez",Logistics,SMB,Ireland,2023-02-03,Paid Search,David Salas
+CUST0338,Meyer-Hughes,HealthTech,SMB,Germany,2023-02-12,Referral,Johnathan Lawrence
+CUST0339,"Schmitt, Johnson and Cuevas",FinTech,SMB,Ireland,2024-07-11,Partner,Christina Li
+CUST0340,Beard PLC,SaaS,SMB,USA,2024-04-30,Paid Search,Andre Brooks
+CUST0341,Hansen PLC,EdTech,Mid-Market,Germany,2023-11-03,Organic,Kristi Huff
+CUST0342,Cantu-Hickman,EdTech,SMB,Ireland,2024-02-21,Organic,Victor Wise
+CUST0343,Garcia-Esparza,FinTech,SMB,Germany,2024-04-26,Outbound,Jasmine Rodriguez
+CUST0344,Wilson PLC,SaaS,SMB,USA,2023-11-29,Partner,Sean Davis
+CUST0345,Nguyen Group,SaaS,SMB,Ireland,2024-01-12,Referral,Henry Skinner
+CUST0346,"Taylor, Brown and Bass",Logistics,SMB,USA,2023-09-03,Referral,Kerry Ramos
+CUST0347,Miller-Riley,FinTech,SMB,UK,2024-10-03,Outbound,Susan Odonnell
+CUST0348,Werner-Neal,FinTech,SMB,UK,2024-04-12,Referral,Lori Camacho
+CUST0349,Parker and Sons,HealthTech,Mid-Market,UK,2024-08-28,Paid Search,Crystal Murphy
+CUST0350,Rivera-Hernandez,EdTech,SMB,Ireland,2024-05-05,Outbound,Richard Gonzalez
+CUST0351,Harrell and Sons,E-Commerce,SMB,UK,2023-04-21,Paid Search,Laura Humphrey
+CUST0352,"Holloway, Butler and Torres",HealthTech,SMB,UK,2023-02-19,Paid Search,Mark Hoover
+CUST0353,"Briggs, Sweeney and Summers",EdTech,Mid-Market,Ireland,2024-03-07,Partner,Taylor Herrera
+CUST0354,Jacobs Ltd,Logistics,SMB,Germany,2024-12-21,Partner,Nicholas Ellis
+CUST0355,Jackson-Holden,Logistics,Mid-Market,USA,2023-10-19,Outbound,Alexander Miller
+CUST0356,Olson Ltd,EdTech,SMB,UK,2024-04-22,Partner,Lisa Gonzalez
+CUST0357,Avila and Sons,SaaS,SMB,USA,2023-05-08,Referral,Suzanne Johnson
+CUST0358,"Odonnell, King and Mullins",E-Commerce,Mid-Market,USA,2023-07-25,Referral,Erica Aguilar
+CUST0359,"Gibson, King and Miller",FinTech,SMB,Ireland,2024-08-17,Referral,Brett Mendez
+CUST0360,Roberts-West,FinTech,SMB,USA,2024-04-28,Outbound,Laura Miller
+CUST0361,"Mosley, Patel and Spears",Logistics,SMB,USA,2024-10-25,Organic,Garrett Schultz
+CUST0362,Wilcox PLC,Logistics,SMB,USA,2024-09-07,Referral,Jennifer Wright
+CUST0363,"Brown, Rodriguez and Hartman",Logistics,Mid-Market,Ireland,2024-12-21,Organic,Jessica Rodriguez
+CUST0364,Olson LLC,E-Commerce,SMB,France,2024-01-25,Organic,Mark Craig
+CUST0365,"Gonzalez, Evans and Caldwell",HealthTech,Mid-Market,Ireland,2024-06-25,Partner,Melissa Brown
+CUST0366,"Reynolds, Quinn and Swanson",Logistics,Enterprise,USA,2024-09-22,Paid Search,Casey Morgan
+CUST0367,Montgomery-Kidd,E-Commerce,SMB,UK,2023-04-27,Referral,Autumn Willis
+CUST0368,"Mitchell, Williams and Delgado",FinTech,Mid-Market,Germany,2024-03-07,Referral,Amanda Perry
+CUST0369,Fernandez-Wallace,FinTech,SMB,USA,2024-08-12,Partner,Denise Young
+CUST0370,"Skinner, Hernandez and Cooley",EdTech,SMB,Germany,2024-09-10,Outbound,Alexis Jordan
+CUST0371,"Roberts, Parker and Lewis",E-Commerce,Enterprise,Ireland,2023-09-09,Paid Search,Charles Taylor
+CUST0372,Cruz Ltd,E-Commerce,Enterprise,France,2024-04-08,Partner,Matthew Wong
+CUST0373,"Johnson, Nunez and Zuniga",EdTech,SMB,France,2024-05-12,Referral,Brandi Fields
+CUST0374,"Mitchell, Buckley and Jones",EdTech,Mid-Market,Germany,2023-10-20,Paid Search,Natalie Christian
+CUST0375,"Smith, Browning and Navarro",EdTech,Mid-Market,France,2024-04-07,Outbound,Jenny Smith
+CUST0376,Rodriguez-Brown,EdTech,SMB,UK,2024-04-17,Referral,Jodi Hines
+CUST0377,Wilson LLC,E-Commerce,SMB,Ireland,2024-03-21,Paid Search,Phillip Watson
+CUST0378,"Parks, Hendricks and Perez",SaaS,SMB,Ireland,2023-04-26,Paid Search,Robert Mann
+CUST0379,"Olson, Hayes and Berry",E-Commerce,SMB,Germany,2023-06-25,Organic,Amanda Bass MD
+CUST0380,"Fernandez, Contreras and Hobbs",Logistics,Mid-Market,Germany,2024-05-05,Outbound,Kurt Donovan
+CUST0381,Santiago-Warner,E-Commerce,SMB,Germany,2024-05-04,Outbound,Jasmine Villarreal
+CUST0382,Torres PLC,SaaS,SMB,Ireland,2024-04-26,Paid Search,Elizabeth Johnson
+CUST0383,"Richards, Lin and King",Logistics,Mid-Market,Germany,2023-09-25,Paid Search,John Mora
+CUST0384,"Ward, Smith and King",FinTech,Mid-Market,UK,2023-06-14,Paid Search,April Day
+CUST0385,Jones-Campbell,Logistics,Enterprise,UK,2023-11-29,Partner,Jason Crosby
+CUST0386,Blanchard Ltd,HealthTech,SMB,UK,2024-10-07,Partner,Jay Norris
+CUST0387,Kelly Inc,HealthTech,Enterprise,UK,2024-03-24,Outbound,Courtney King
+CUST0388,Vargas and Sons,SaaS,Enterprise,Germany,2024-06-19,Partner,Cheyenne Sexton
+CUST0389,"White, Brown and Sherman",SaaS,Mid-Market,France,2023-11-11,Paid Search,Marcia Houston
+CUST0390,Brown LLC,HealthTech,Mid-Market,Germany,2023-02-11,Organic,Jamie Guerrero
+CUST0391,Cook and Sons,E-Commerce,Mid-Market,USA,2023-01-07,Organic,Lori Mendez
+CUST0392,Chavez and Sons,Logistics,Mid-Market,Germany,2023-04-17,Referral,Danielle Ortiz
+CUST0393,Harrison-Weaver,HealthTech,SMB,UK,2023-12-29,Outbound,Donald Bentley
+CUST0394,Andrews Inc,SaaS,SMB,Ireland,2023-03-04,Paid Search,Abigail Lewis
+CUST0395,"Johnson, Collins and Sanders",E-Commerce,Mid-Market,France,2023-11-25,Partner,Matthew Webster
+CUST0396,Sanders-Marshall,Logistics,SMB,UK,2023-03-29,Partner,Kara Franco
+CUST0397,Nixon PLC,E-Commerce,Enterprise,UK,2023-10-05,Referral,Gregory Cortez
+CUST0398,Cruz Inc,EdTech,Enterprise,USA,2024-10-25,Paid Search,John Kelly
+CUST0399,Mckenzie-Ali,E-Commerce,SMB,France,2024-06-24,Partner,Arthur Barnett
+CUST0400,Miller PLC,HealthTech,Mid-Market,Germany,2023-11-25,Partner,Christina Allen DDS
+CUST0401,Bush-Morgan,FinTech,SMB,France,2024-09-30,Organic,Elizabeth Johnston
+CUST0402,"Ball, Ponce and Ferguson",HealthTech,SMB,USA,2023-05-06,Outbound,Mary Stevens
+CUST0403,"Washington, Vega and Hoffman",FinTech,Mid-Market,Germany,2024-11-21,Paid Search,Marie Johnson
+CUST0404,"Jones, Mullins and Welch",FinTech,SMB,UK,2024-02-07,Outbound,Lauren Baldwin
+CUST0405,Duarte PLC,FinTech,SMB,Germany,2023-04-24,Partner,Dennis Jenkins
+CUST0406,"Wise, Taylor and Smith",FinTech,Mid-Market,USA,2024-10-05,Outbound,Andrew Lopez
+CUST0407,"White, Schwartz and Swanson",HealthTech,SMB,UK,2024-04-19,Organic,Jasmine James
+CUST0408,"Wright, Mcdaniel and Brown",HealthTech,Mid-Market,USA,2024-04-16,Paid Search,Amanda Lewis
+CUST0409,"Burton, Ward and Stanley",FinTech,Mid-Market,USA,2023-12-13,Referral,Nathan Weaver
+CUST0410,Simmons-Smith,Logistics,SMB,USA,2024-04-26,Outbound,Patricia Johnson
+CUST0411,Price Group,SaaS,Mid-Market,Germany,2024-07-28,Organic,Ebony Garcia
+CUST0412,Nelson Inc,E-Commerce,Mid-Market,UK,2024-12-18,Organic,Megan Smith
+CUST0413,"Christensen, Thompson and Cordova",FinTech,SMB,UK,2023-08-16,Organic,Patrick Brady
+CUST0414,"Macias, Cooper and Gonzalez",EdTech,Mid-Market,Germany,2024-02-11,Paid Search,Joseph Garner
+CUST0415,"Mejia, Case and Pierce",Logistics,SMB,UK,2024-04-22,Paid Search,Christopher Johnson
+CUST0416,Dunn-Johnston,EdTech,Mid-Market,USA,2023-05-10,Partner,Tina Morales
+CUST0417,"Burke, Jones and Schultz",HealthTech,Mid-Market,Ireland,2024-05-12,Partner,Wanda Molina
+CUST0418,"Patterson, Smith and Smith",HealthTech,SMB,Ireland,2023-01-30,Paid Search,Rebecca Byrd
+CUST0419,"Hall, Valenzuela and Reyes",E-Commerce,Enterprise,France,2023-01-13,Outbound,Sarah Spence
+CUST0420,Davidson-Oneill,Logistics,SMB,USA,2023-08-08,Organic,Douglas Collins
+CUST0421,"Lindsey, Clark and Smith",HealthTech,Mid-Market,UK,2023-03-09,Organic,Rebecca Wiley
+CUST0422,Price and Sons,E-Commerce,Enterprise,UK,2023-07-24,Referral,James Parker
+CUST0423,Garcia-Gomez,SaaS,SMB,USA,2023-11-11,Partner,Jessica Johnson
+CUST0424,"Stewart, Buckley and Henry",HealthTech,SMB,USA,2023-06-24,Partner,Kathy Wright
+CUST0425,Mckinney-Barnett,Logistics,SMB,UK,2023-05-01,Organic,Scott Davis
+CUST0426,"Johnson, Robinson and Torres",FinTech,Mid-Market,UK,2023-01-27,Paid Search,Thomas Anderson
+CUST0427,Taylor-Fitzpatrick,E-Commerce,Mid-Market,Ireland,2023-08-29,Referral,Christina Byrd
+CUST0428,Bradford LLC,E-Commerce,Mid-Market,UK,2024-07-29,Partner,Russell Green
+CUST0429,"Adams, Ramos and Byrd",SaaS,SMB,UK,2024-09-22,Organic,Claire Hutchinson
+CUST0430,Ross-Larson,E-Commerce,Mid-Market,USA,2023-02-10,Partner,Oscar Smith
+CUST0431,Wood PLC,FinTech,SMB,Ireland,2023-09-03,Partner,Jennifer Rivera
+CUST0432,Morris Group,EdTech,SMB,USA,2023-08-05,Organic,Sarah Craig DVM
+CUST0433,"Flowers, Rodriguez and Valenzuela",Logistics,SMB,USA,2023-07-27,Partner,Kelly Carter
+CUST0434,Keller and Sons,FinTech,SMB,UK,2023-03-23,Referral,Jennifer Jones
+CUST0435,Brewer Group,Logistics,SMB,Ireland,2024-12-17,Paid Search,Jason Swanson
+CUST0436,Moore Inc,E-Commerce,Mid-Market,UK,2024-10-11,Organic,Justin Mccoy
+CUST0437,Anderson-Smith,Logistics,Mid-Market,UK,2024-10-14,Referral,Nathaniel Hayes
+CUST0438,Martin Inc,HealthTech,Mid-Market,France,2024-06-20,Organic,Paul Moore
+CUST0439,Liu-Lang,SaaS,Mid-Market,USA,2023-09-07,Outbound,Juan Williams
+CUST0440,"Richards, Curtis and Jackson",E-Commerce,SMB,USA,2023-01-12,Paid Search,Joseph Banks
+CUST0441,"Lopez, Coleman and Morrison",E-Commerce,Enterprise,USA,2023-11-05,Partner,Lisa Williams
+CUST0442,Macias Inc,HealthTech,SMB,Germany,2024-01-14,Partner,Dana Randolph DVM
+CUST0443,"Armstrong, Guzman and Smith",EdTech,SMB,UK,2023-08-19,Organic,Nathan Burke
+CUST0444,"Sanders, Campos and Norris",E-Commerce,Mid-Market,USA,2024-09-13,Organic,Jane Baker
+CUST0445,Brown-Gardner,E-Commerce,Mid-Market,Germany,2023-01-11,Paid Search,Joshua Wright
+CUST0446,"Webster, Lin and Caldwell",EdTech,Mid-Market,USA,2024-03-11,Referral,David Smith
+CUST0447,Trujillo-Porter,FinTech,Mid-Market,France,2024-10-31,Paid Search,Christopher Mclaughlin
+CUST0448,Daniel-Graham,SaaS,SMB,Ireland,2024-09-15,Outbound,John Benton
+CUST0449,Taylor-Burnett,SaaS,Mid-Market,Germany,2023-10-01,Outbound,Katrina Martin
+CUST0450,"Rubio, Mendoza and Michael",FinTech,SMB,Ireland,2024-12-27,Partner,Amy Escobar
+CUST0451,Rogers and Sons,EdTech,Enterprise,USA,2023-05-04,Partner,Marc Hubbard
+CUST0452,Neal and Sons,Logistics,Mid-Market,Ireland,2023-01-14,Referral,Eric Harrison
+CUST0453,Miller Group,SaaS,Mid-Market,USA,2023-12-27,Outbound,Destiny Shea
+CUST0454,Barry-Johnson,Logistics,SMB,USA,2023-03-25,Paid Search,Timothy James
+CUST0455,Stewart-Ali,HealthTech,Mid-Market,UK,2024-06-21,Organic,Jeremy Moore
+CUST0456,"Flores, Martinez and Brown",Logistics,Mid-Market,Ireland,2024-03-14,Paid Search,Christian Singh
+CUST0457,Rodgers-Schmidt,EdTech,SMB,UK,2023-01-28,Outbound,Valerie Kelly
+CUST0458,Martinez-Rice,FinTech,Enterprise,UK,2024-06-26,Outbound,Patricia Brown
+CUST0459,Perez-Lamb,EdTech,SMB,UK,2023-05-09,Outbound,Scott Shepherd
+CUST0460,Cooper Group,EdTech,SMB,Ireland,2024-06-13,Outbound,Laura Serrano
+CUST0461,Davis-Wang,EdTech,SMB,USA,2023-01-31,Outbound,Susan Contreras
+CUST0462,Moore PLC,Logistics,SMB,Ireland,2024-11-09,Organic,Gregory Leon
+CUST0463,Navarro-Daniels,EdTech,SMB,Germany,2023-06-19,Referral,Brittney Barker DDS
+CUST0464,Dixon-Jordan,Logistics,Mid-Market,UK,2024-11-15,Organic,Nicholas Lane
+CUST0465,Peters LLC,EdTech,SMB,USA,2024-05-23,Referral,Daisy Clay
+CUST0466,Howell-Reynolds,EdTech,SMB,UK,2024-05-10,Partner,Lance Mullins
+CUST0467,Diaz Group,FinTech,SMB,Ireland,2023-05-26,Partner,Angela Williams
+CUST0468,Gonzalez-Harris,HealthTech,SMB,UK,2023-05-20,Paid Search,Robert Brock
+CUST0469,"Frederick, Smith and Pena",EdTech,SMB,UK,2024-08-04,Referral,Eric Andrews
+CUST0470,"Faulkner, Johnson and Price",HealthTech,Enterprise,Germany,2024-06-28,Outbound,Mrs. Julie Leonard DDS
+CUST0471,Reynolds-Thomas,E-Commerce,Mid-Market,UK,2024-04-10,Organic,Angela Montoya
+CUST0472,"Gregory, Gonzalez and Tucker",HealthTech,SMB,Ireland,2023-02-22,Organic,Amber Watkins
+CUST0473,Wilson-Cooper,SaaS,SMB,Germany,2024-06-14,Partner,Dorothy Hernandez
+CUST0474,Shannon-Wells,HealthTech,SMB,Germany,2024-12-10,Outbound,Kathy Lowe
+CUST0475,"King, Rivers and Cobb",HealthTech,Mid-Market,Germany,2024-04-07,Partner,John Johnson
+CUST0476,Moore-Scott,SaaS,Enterprise,USA,2023-09-06,Referral,Patricia Jordan
+CUST0477,"Graham, Thomas and Phillips",FinTech,SMB,France,2023-11-18,Outbound,Karen Salinas
+CUST0478,Barron-Lopez,HealthTech,SMB,UK,2024-04-22,Referral,Kathy George
+CUST0479,Warren-Beasley,E-Commerce,SMB,USA,2024-05-30,Partner,Adam Gallagher
+CUST0480,Nelson Group,FinTech,SMB,Germany,2024-11-20,Partner,Laura Black
+CUST0481,Harvey and Sons,E-Commerce,SMB,USA,2024-02-20,Partner,Jesse Edwards
+CUST0482,"Reed, Barr and Tyler",SaaS,SMB,Ireland,2024-04-23,Outbound,Kelly Collier
+CUST0483,Burton and Sons,Logistics,SMB,UK,2024-09-01,Partner,Tracey Wood
+CUST0484,Mcmahon-Livingston,Logistics,Mid-Market,UK,2023-10-27,Outbound,Mary Brown
+CUST0485,Brady LLC,FinTech,Mid-Market,Ireland,2024-11-08,Organic,Alexander Garcia
+CUST0486,Mcdonald LLC,E-Commerce,SMB,USA,2024-02-06,Referral,Kelsey Hoffman
+CUST0487,Barker-Bailey,HealthTech,Mid-Market,USA,2023-11-20,Partner,Elizabeth Rodriguez
+CUST0488,"Weaver, Cantrell and Callahan",FinTech,Mid-Market,Ireland,2024-05-10,Referral,Ryan Sharp
+CUST0489,Lewis-Phillips,Logistics,Mid-Market,USA,2024-10-08,Outbound,Christopher Brown
+CUST0490,Kelly Ltd,HealthTech,Enterprise,UK,2023-08-24,Outbound,Kayla Brown
+CUST0491,Fields-Nichols,SaaS,SMB,France,2024-06-21,Referral,Emily Jackson
+CUST0492,"Gregory, Johnson and Hughes",Logistics,Mid-Market,Germany,2023-08-14,Outbound,Janet Gray
+CUST0493,"Summers, Page and Soto",Logistics,SMB,UK,2024-08-10,Organic,Taylor Salazar
+CUST0494,"Hood, Wilson and Nguyen",EdTech,SMB,Ireland,2023-10-22,Partner,Rachael Lyons
+CUST0495,Patel-Cook,EdTech,Mid-Market,Germany,2024-11-10,Organic,Dillon Martinez
+CUST0496,Rice-Bruce,E-Commerce,Mid-Market,France,2024-03-06,Outbound,Mark Newton
+CUST0497,"Patton, Alvarado and Arnold",EdTech,Mid-Market,Ireland,2024-09-26,Partner,David Pierce
+CUST0498,Taylor and Sons,EdTech,SMB,USA,2024-12-21,Partner,Hannah Hill
+CUST0499,Castillo-Phillips,EdTech,SMB,UK,2023-04-20,Outbound,Joshua Smith
+CUST0500,"Wolf, Lewis and Sanchez",FinTech,Enterprise,Ireland,2023-08-11,Partner,Brianna Esparza
