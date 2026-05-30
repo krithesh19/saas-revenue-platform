@@ -1,0 +1,22 @@
+# Secrets
+.env
+*.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# dbt
+saas_revenue_dbt/target/
+saas_revenue_dbt/dbt_packages/
+saas_revenue_dbt/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI
+*.pbix
