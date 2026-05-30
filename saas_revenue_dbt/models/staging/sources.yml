@@ -12,27 +12,46 @@ sources:
         columns:
           - name: CUSTOMER_ID
             description: "Unique customer identifier"
+            tests:
+              - unique
+              - not_null
           - name: COMPANY_NAME
-            description: "Company name"
+            tests:
+              - not_null
           - name: SEGMENT
-            description: "Customer segment — SMB, Mid-Market, Enterprise"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['SMB', 'Mid-Market', 'Enterprise']
 
       - name: subscriptions
-        description: "Raw subscription data — one row per customer subscription"
+        description: "Raw subscription data"
         columns:
           - name: SUBSCRIPTION_ID
-            description: "Unique subscription identifier"
-          - name: MRR
-            description: "Monthly Recurring Revenue in USD"
+            tests:
+              - unique
+              - not_null
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
           - name: STATUS
-            description: "Active or Churned"
+            tests:
+              - accepted_values:
+                  values: ['Active', 'Churned']
+          - name: MRR
+            tests:
+              - not_null
 
       - name: invoices
         description: "Raw monthly invoice records"
         columns:
           - name: INVOICE_ID
-            description: "Unique invoice identifier"
+            tests:
+              - unique
+              - not_null
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
           - name: AMOUNT_DUE
-            description: "Amount billed to customer"
-          - name: PAYMENT_STATUS
-            description: "Paid, Late, or Failed"
+            tests:
+              - not_null
