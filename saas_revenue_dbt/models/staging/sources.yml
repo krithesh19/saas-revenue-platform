@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: raw
+    database: SAAS_REVENUE_DB
+    schema: RAW
+    description: "Raw data loaded from Azure Blob Storage via Python ETL"
+    
+    tables:
+      - name: customers
+        description: "Raw customer data — 500 SaaS companies"
+        columns:
+          - name: CUSTOMER_ID
+            description: "Unique customer identifier"
+          - name: COMPANY_NAME
+            description: "Company name"
+          - name: SEGMENT
+            description: "Customer segment — SMB, Mid-Market, Enterprise"
+
+      - name: subscriptions
+        description: "Raw subscription data — one row per customer subscription"
+        columns:
+          - name: SUBSCRIPTION_ID
+            description: "Unique subscription identifier"
+          - name: MRR
+            description: "Monthly Recurring Revenue in USD"
+          - name: STATUS
+            description: "Active or Churned"
+
+      - name: invoices
+        description: "Raw monthly invoice records"
+        columns:
+          - name: INVOICE_ID
+            description: "Unique invoice identifier"
+          - name: AMOUNT_DUE
+            description: "Amount billed to customer"
+          - name: PAYMENT_STATUS
+            description: "Paid, Late, or Failed"
