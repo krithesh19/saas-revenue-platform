@@ -1,0 +1,58 @@
+name: dbt CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  dbt-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dbt
+        run: |
+          pip install dbt-snowflake
+
+      - name: Create dbt profiles
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml << EOF
+          saas_revenue_dbt:
+            target: dev
+            outputs:
+              dev:
+                type: snowflake
+                account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+                user: ${{ secrets.SNOWFLAKE_USER }}
+                password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+                role: ACCOUNTADMIN
+                database: SAAS_REVENUE_DB
+                warehouse: SAAS_WH
+                schema: GOLD
+                threads: 4
+          EOF
+
+      - name: Run dbt deps
+        run: |
+          cd saas_revenue_dbt
+          dbt deps
+
+      - name: Run dbt tests
+        run: |
+          cd saas_revenue_dbt
+          dbt test
+
+      - name: Run dbt run
+        run: |
+          cd saas_revenue_dbt
+          dbt run
