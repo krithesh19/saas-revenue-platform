@@ -1,8 +1,3 @@
-"""
-streamlit_app/pages/11_quick_ratio.py
-⚡ Quick Ratio & Rule of 40 — SaaS Health Metrics
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -19,25 +14,23 @@ st.markdown("The two most important SaaS business health metrics used by investo
 def load_waterfall():
     return run_query("""
         SELECT
-            month_date,
-            new_mrr,
-            expansion_mrr,
-            contraction_mrr,
-            churn_mrr,
-            net_new_mrr
+            INVOICE_MONTH,
+            MRR_MOVEMENT_TYPE,
+            TOTAL_MRR,
+            MRR_CHANGE
         FROM SAAS_REVENUE_DB.GOLD.revenue_waterfall
-        ORDER BY month_date
+        ORDER BY INVOICE_MONTH
     """)
 
 @st.cache_data(ttl=300)
 def load_mrr():
     return run_query("""
         SELECT
-            month_date,
-            SUM(mrr_amount) AS total_mrr
+            INVOICE_MONTH AS month_date,
+            SUM(MRR) AS total_mrr
         FROM SAAS_REVENUE_DB.GOLD.mrr_monthly
-        GROUP BY month_date
-        ORDER BY month_date
+        GROUP BY INVOICE_MONTH
+        ORDER BY INVOICE_MONTH
     """)
 
 with st.spinner("Loading data..."):
@@ -51,53 +44,63 @@ if wf_df.empty:
 wf_df.columns  = [c.lower() for c in wf_df.columns]
 mrr_df.columns = [c.lower() for c in mrr_df.columns]
 
-wf_df["month_date"]  = pd.to_datetime(wf_df["month_date"])
-mrr_df["month_date"] = pd.to_datetime(mrr_df["month_date"])
+wf_df["invoice_month"] = pd.to_datetime(wf_df["invoice_month"])
+mrr_df["month_date"]   = pd.to_datetime(mrr_df["month_date"])
 
-# ── Quick Ratio calculation ───────────────────────────────────────────────────
-wf_df["quick_ratio"] = (
-    (wf_df["new_mrr"] + wf_df["expansion_mrr"]) /
-    (wf_df["churn_mrr"].abs() + wf_df["contraction_mrr"].abs())
-).replace([np.inf, -np.inf], 0).fillna(0)
+# ── Pivot waterfall by movement type ─────────────────────────────────────────
+pivot = wf_df.pivot_table(
+    index="invoice_month",
+    columns="mrr_movement_type",
+    values="total_mrr",
+    aggfunc="sum"
+).fillna(0).reset_index()
 
-# ── Rule of 40 calculation ────────────────────────────────────────────────────
+pivot.columns = [str(c).lower().replace(" ", "_") for c in pivot.columns]
+
+# ── Try to find new/expansion/churn columns ───────────────────────────────────
+all_cols = list(pivot.columns)
+new_col       = next((c for c in all_cols if "new" in c), None)
+expansion_col = next((c for c in all_cols if "expansion" in c or "upgrade" in c), None)
+churn_col     = next((c for c in all_cols if "churn" in c or "cancel" in c), None)
+contract_col  = next((c for c in all_cols if "contract" in c or "downgrade" in c), None)
+
+# ── Quick Ratio ───────────────────────────────────────────────────────────────
+if new_col and churn_col:
+    inflow  = pivot[new_col] + (pivot[expansion_col] if expansion_col else 0)
+    outflow = pivot[churn_col].abs() + (pivot[contract_col].abs() if contract_col else 0)
+    pivot["quick_ratio"] = (inflow / outflow.replace(0, np.nan)).fillna(0)
+else:
+    pivot["quick_ratio"] = 0
+
 mrr_df["growth_rate"] = mrr_df["total_mrr"].pct_change() * 100
 
 st.sidebar.header("⚙️ Rule of 40 Settings")
-profit_margin = st.sidebar.slider(
-    "Current profit margin %", -50, 50, -10,
-    help="Negative = still investing in growth"
-)
+profit_margin = st.sidebar.slider("Current profit margin %", -50, 50, -10)
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Quick Ratio Benchmarks:**")
 st.sidebar.markdown("- Below 1: Shrinking")
 st.sidebar.markdown("- 1-2: Slow growth")
 st.sidebar.markdown("- 2-4: Healthy")
 st.sidebar.markdown("- Above 4: Excellent")
-st.sidebar.markdown("---")
-st.sidebar.markdown("**Rule of 40 Benchmark:**")
-st.sidebar.markdown("- Above 40: Healthy")
-st.sidebar.markdown("- Below 40: Needs attention")
 
-# ── KPIs ──────────────────────────────────────────────────────────────────────
-avg_quick_ratio   = wf_df["quick_ratio"].mean()
-latest_quick      = wf_df["quick_ratio"].iloc[-1]
-avg_growth_rate   = mrr_df["growth_rate"].mean()
-rule_of_40_score  = avg_growth_rate + profit_margin
+avg_quick_ratio  = pivot["quick_ratio"].mean()
+latest_quick     = pivot["quick_ratio"].iloc[-1]
+avg_growth_rate  = mrr_df["growth_rate"].mean()
+rule_of_40_score = avg_growth_rate + profit_margin
 
 def qr_status(qr):
-    if qr >= 4:   return "🟢 Excellent"
-    elif qr >= 2: return "🟡 Healthy"
-    elif qr >= 1: return "🟠 Slow Growth"
-    else:         return "🔴 Shrinking"
+    if qr >= 4:    return "🟢 Excellent"
+    elif qr >= 2:  return "🟡 Healthy"
+    elif qr >= 1:  return "🟠 Slow Growth"
+    else:          return "🔴 Shrinking"
 
 def r40_status(score):
-    if score >= 40: return "🟢 Healthy"
+    if score >= 40:   return "🟢 Healthy"
     elif score >= 20: return "🟡 Watch"
-    else: return "🔴 Needs Attention"
+    else:             return "🔴 Needs Attention"
 
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("Latest Quick Ratio",  f"{latest_quick:.2f}",  qr_status(latest_quick))
+c1.metric("Latest Quick Ratio",  f"{latest_quick:.2f}", qr_status(latest_quick))
 c2.metric("Avg Quick Ratio",     f"{avg_quick_ratio:.2f}", qr_status(avg_quick_ratio))
 c3.metric("Avg MRR Growth Rate", f"{avg_growth_rate:.1f}%")
 c4.metric("Rule of 40 Score",    f"{rule_of_40_score:.1f}",
@@ -106,32 +109,24 @@ c4.metric("Rule of 40 Score",    f"{rule_of_40_score:.1f}",
 
 st.markdown("---")
 
-# ── Quick Ratio chart ─────────────────────────────────────────────────────────
 col1, col2 = st.columns(2)
-
 with col1:
     st.subheader("Quick Ratio Over Time")
     colors = ["#2ECC71" if qr >= 4 else "#F1C40F" if qr >= 2
               else "#E67E22" if qr >= 1 else "#E74C3C"
-              for qr in wf_df["quick_ratio"]]
+              for qr in pivot["quick_ratio"]]
     fig = go.Figure()
     fig.add_trace(go.Bar(
-        x=wf_df["month_date"],
-        y=wf_df["quick_ratio"],
-        marker_color=colors,
-        name="Quick Ratio",
-    ))
+        x=pivot["invoice_month"], y=pivot["quick_ratio"],
+        marker_color=colors, name="Quick Ratio"))
     fig.add_hline(y=4, line_dash="dash", line_color="#2ECC71",
-                  annotation_text="Excellent (4)", annotation_position="right")
+                  annotation_text="Excellent (4)")
     fig.add_hline(y=2, line_dash="dash", line_color="#F1C40F",
-                  annotation_text="Healthy (2)", annotation_position="right")
+                  annotation_text="Healthy (2)")
     fig.add_hline(y=1, line_dash="dash", line_color="#E74C3C",
-                  annotation_text="Minimum (1)", annotation_position="right")
-    fig.update_layout(
-        template="plotly_dark", height=380,
-        yaxis_title="Quick Ratio",
-        xaxis_title="Month",
-    )
+                  annotation_text="Minimum (1)")
+    fig.update_layout(template="plotly_dark", height=380,
+                      yaxis_title="Quick Ratio", xaxis_title="Month")
     st.plotly_chart(fig, use_container_width=True)
 
 with col2:
@@ -152,73 +147,44 @@ with col2:
             ],
             "threshold": {
                 "line": {"color": "white", "width": 4},
-                "thickness": 0.75,
-                "value": 40,
+                "thickness": 0.75, "value": 40,
             },
         },
     ))
-    fig2.update_layout(
-        template="plotly_dark", height=380,
-    )
+    fig2.update_layout(template="plotly_dark", height=380)
     st.plotly_chart(fig2, use_container_width=True)
 
-# ── Quick Ratio breakdown ─────────────────────────────────────────────────────
-st.subheader("Quick Ratio Components")
-fig3 = go.Figure()
-fig3.add_trace(go.Bar(
-    x=wf_df["month_date"],
-    y=wf_df["new_mrr"] + wf_df["expansion_mrr"],
-    name="Inflow (New + Expansion)",
-    marker_color="#2ECC71",
-))
-fig3.add_trace(go.Bar(
-    x=wf_df["month_date"],
-    y=-(wf_df["churn_mrr"].abs() + wf_df["contraction_mrr"].abs()),
-    name="Outflow (Churn + Contraction)",
-    marker_color="#E74C3C",
-))
-fig3.update_layout(
-    barmode="relative",
-    template="plotly_dark", height=320,
-    title="MRR Inflow vs Outflow",
-    xaxis_title="Month", yaxis_title="MRR ($)",
+st.subheader("MRR by Movement Type")
+fig3 = px.bar(
+    wf_df, x="invoice_month", y="total_mrr",
+    color="mrr_movement_type",
+    title="MRR Breakdown by Movement Type",
+    template="plotly_dark",
+    labels={"total_mrr": "MRR ($)", "invoice_month": "Month"},
 )
+fig3.update_layout(height=320)
 st.plotly_chart(fig3, use_container_width=True)
 
-# ── Interpretation ────────────────────────────────────────────────────────────
 st.markdown("---")
 st.subheader("💡 What This Means")
-
 if latest_quick >= 4:
-    st.success(f"**Quick Ratio {latest_quick:.2f}** — Excellent! For every $1 lost to churn, "
-               f"you're gaining ${latest_quick:.2f} from new and expansion revenue.")
+    st.success(f"**Quick Ratio {latest_quick:.2f}** — Excellent growth efficiency!")
 elif latest_quick >= 2:
-    st.info(f"**Quick Ratio {latest_quick:.2f}** — Healthy growth. "
-            f"Focus on expanding existing accounts to push above 4.")
+    st.info(f"**Quick Ratio {latest_quick:.2f}** — Healthy growth.")
 elif latest_quick >= 1:
-    st.warning(f"**Quick Ratio {latest_quick:.2f}** — Slow growth. "
-               f"New revenue barely covers churn losses.")
+    st.warning(f"**Quick Ratio {latest_quick:.2f}** — Slow growth.")
 else:
-    st.error(f"**Quick Ratio {latest_quick:.2f}** — Business is shrinking. "
-             f"Churn is outpacing new revenue.")
+    st.error(f"**Quick Ratio {latest_quick:.2f}** — Business is shrinking!")
 
 if rule_of_40_score >= 40:
-    st.success(f"**Rule of 40 Score: {rule_of_40_score:.1f}** — Healthy balance of "
-               f"growth ({avg_growth_rate:.1f}%) and profitability ({profit_margin}%).")
+    st.success(f"**Rule of 40: {rule_of_40_score:.1f}** ✅ Healthy!")
 else:
-    st.warning(f"**Rule of 40 Score: {rule_of_40_score:.1f}** — Below 40 benchmark. "
-               f"Need higher growth rate or improved margins.")
+    st.warning(f"**Rule of 40: {rule_of_40_score:.1f}** — Below 40 benchmark.")
 
-# ── Excel export ──────────────────────────────────────────────────────────────
 st.markdown("---")
 buffer = io.BytesIO()
-export_df = wf_df[["month_date", "new_mrr", "expansion_mrr",
-                    "churn_mrr", "contraction_mrr", "quick_ratio"]].copy()
 with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
-    export_df.to_excel(writer, index=False, sheet_name="Quick Ratio")
-st.download_button(
-    label="📥 Download as Excel",
-    data=buffer.getvalue(),
-    file_name="quick_ratio.xlsx",
-    mime="application/vnd.ms-excel",
-)
+    pivot.to_excel(writer, index=False, sheet_name="Quick Ratio")
+st.download_button("📥 Download as Excel",
+    data=buffer.getvalue(), file_name="quick_ratio.xlsx",
+    mime="application/vnd.ms-excel")
