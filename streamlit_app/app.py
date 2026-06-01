@@ -110,7 +110,7 @@ st.markdown("""
     <p style='color: #aaaaaa; font-size: 12px; margin: 0;'>
         📊 <b style='color: #00D4FF;'>SaaS Revenue Intelligence Platform</b>
         &nbsp;|&nbsp;
-        Built by <b style='color: white;'>Krithesh Vinothkumar</b>
+        Built by <b style='color: white;'>Kritheshvar Vinothkumar</b>
         &nbsp;|&nbsp;
         MSc Data & Computational Science, University College Dublin
         &nbsp;|&nbsp;
