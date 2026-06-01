@@ -126,7 +126,6 @@ with col2:
 
 if not mrr_df.empty:
     st.subheader("📈 MRR by Segment Over Time")
-    mrr_df["SIGNUP_DATE"] = pd.to_datetime(mrr_df["SIGNUP_DATE"])
     fig4 = px.area(
         mrr_df,
         x="SIGNUP_DATE",
