@@ -1,6 +1,6 @@
 """
 SaaS Revenue Intelligence Platform
-Built by Krithesh Vinothkumar — MSc Data & Computational Science, UCD Dublin
+Built by Kritheshvar Vinothkumar — MSc Data & Computational Science, UCD Dublin
 """
 
 import streamlit as st
@@ -38,16 +38,16 @@ st.sidebar.markdown("""
     margin-top: 10px;
 '>
     <p style='color: #00D4FF; font-size: 13px; margin: 0; font-weight: bold;'>👨‍💻 Built by</p>
-    <p style='color: white; font-size: 14px; margin: 4px 0; font-weight: bold;'>Krithesh Vinothkumar</p>
+    <p style='color: white; font-size: 14px; margin: 4px 0; font-weight: bold;'>Kritheshvar Vinothkumar</p>
     <p style='color: #aaaaaa; font-size: 11px; margin: 0;'>MSc Data & Computational Science</p>
     <p style='color: #aaaaaa; font-size: 11px; margin: 0;'>University College Dublin 🇮🇪</p>
     <br/>
-    <a href='https://linkedin.com/in/krithesh-analyst' target='_blank'
+    <a href='https://linkedin.com/in/Kritheshvar-analyst' target='_blank'
        style='color: #0077B5; font-size: 11px; text-decoration: none;'>
         🔗 LinkedIn
     </a>
     &nbsp;|&nbsp;
-    <a href='https://github.com/krithesh19' target='_blank'
+    <a href='https://github.com/Kritheshvar19' target='_blank'
        style='color: #aaaaaa; font-size: 11px; text-decoration: none;'>
         🐙 GitHub
     </a>
@@ -114,17 +114,17 @@ st.markdown("""
         &nbsp;|&nbsp;
         MSc Data & Computational Science, University College Dublin
         &nbsp;|&nbsp;
-        <a href='https://krithesh-saas-platform.streamlit.app'
+        <a href='https://Kritheshvar-saas-platform.streamlit.app'
            style='color: #00D4FF; text-decoration: none;'>
            🚀 Live App
         </a>
         &nbsp;|&nbsp;
-        <a href='https://github.com/krithesh19/saas-revenue-platform'
+        <a href='https://github.com/Kritheshvar19/saas-revenue-platform'
            style='color: #aaaaaa; text-decoration: none;'>
            🐙 GitHub
         </a>
         &nbsp;|&nbsp;
-        <a href='https://linkedin.com/in/krithesh-analyst'
+        <a href='https://linkedin.com/in/Kritheshvar-analyst'
            style='color: #0077B5; text-decoration: none;'>
            🔗 LinkedIn
         </a>
