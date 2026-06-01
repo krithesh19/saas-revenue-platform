@@ -1,0 +1,46 @@
+# SaaS Revenue Intelligence Platform
+# Built by Kritheshvar Vinothkumar — UCD Dublin
+
+version: '3.8'
+
+services:
+  streamlit:
+    build: .
+    container_name: saas-revenue-platform
+    ports:
+      - "8501:8501"
+    environment:
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+      - SNOWFLAKE_WAREHOUSE=${SNOWFLAKE_WAREHOUSE}
+      - SNOWFLAKE_DATABASE=${SNOWFLAKE_DATABASE}
+      - SNOWFLAKE_SCHEMA=${SNOWFLAKE_SCHEMA}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./streamlit_app:/app/streamlit_app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  dbt:
+    image: python:3.11-slim
+    container_name: saas-dbt
+    working_dir: /app
+    volumes:
+      - ./saas_revenue_dbt:/app
+    environment:
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+      - SNOWFLAKE_WAREHOUSE=${SNOWFLAKE_WAREHOUSE}
+      - SNOWFLAKE_DATABASE=${SNOWFLAKE_DATABASE}
+    command: >
+      bash -c "pip install dbt-snowflake &&
+               dbt run &&
+               dbt test"
+    profiles:
+      - dbt
