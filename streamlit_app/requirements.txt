@@ -1,0 +1,15 @@
+streamlit
+snowflake-connector-python[pandas]
+snowflake-sqlalchemy
+SQLAlchemy
+langchain
+langchain-community
+langchain-openai
+langchain-groq
+openai
+pandas
+plotly
+python-dotenv
+scikit-learn
+openpyxl
+xlsxwriter
